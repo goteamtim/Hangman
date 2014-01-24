@@ -33,8 +33,25 @@ namespace Hangman
             head.Visible = false;
             Random choice = new Random();
 
+            txt_bx_1.Visible = false;
+            txt_bx_2.Visible = false;
+            txt_bx_3.Visible = false;
+            txt_bx_4.Visible = false;
+            txt_bx_5.Visible = false;
+            txt_bx_6.Visible = false;
+            txt_bx_7.Visible = false;
+            txt_bx_8.Visible = false;
+            txt_bx_9.Visible = false;
+            txt_bx_10.Visible = false;
+            TextBox[] letters = {txt_bx_1,txt_bx_2,txt_bx_3,txt_bx_4,txt_bx_5,txt_bx_6,txt_bx_7,txt_bx_8,txt_bx_9,txt_bx_10}; //new TextBox[10];
+
             string[] wordBank = { "Packmule", "Pie", "Marathon","Internet","Pumpkin","Christmas","Bicycle","Teacher" };
             string winningWord = wordBank[choice.Next(0, wordBank.Length)];//Pick a random word from the word bank
+
+            for (int i = 0; i < winningWord.Length;i++ )//Only show the letters for the selected word
+            {
+                letters[i].Visible = true;
+            }
         }
 
         private void btn_A_Click(object sender, EventArgs e)
