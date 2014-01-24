@@ -441,6 +441,7 @@
             this.txt_bx_1.Name = "txt_bx_1";
             this.txt_bx_1.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_1.TabIndex = 27;
+            this.txt_bx_1.Visible = false;
             // 
             // txt_bx_2
             // 
@@ -448,6 +449,7 @@
             this.txt_bx_2.Name = "txt_bx_2";
             this.txt_bx_2.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_2.TabIndex = 28;
+            this.txt_bx_2.Visible = false;
             // 
             // txt_bx_3
             // 
@@ -455,6 +457,7 @@
             this.txt_bx_3.Name = "txt_bx_3";
             this.txt_bx_3.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_3.TabIndex = 29;
+            this.txt_bx_3.Visible = false;
             // 
             // txt_bx_4
             // 
@@ -462,6 +465,7 @@
             this.txt_bx_4.Name = "txt_bx_4";
             this.txt_bx_4.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_4.TabIndex = 30;
+            this.txt_bx_4.Visible = false;
             // 
             // txt_bx_5
             // 
@@ -469,6 +473,7 @@
             this.txt_bx_5.Name = "txt_bx_5";
             this.txt_bx_5.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_5.TabIndex = 31;
+            this.txt_bx_5.Visible = false;
             // 
             // txt_bx_6
             // 
@@ -476,6 +481,7 @@
             this.txt_bx_6.Name = "txt_bx_6";
             this.txt_bx_6.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_6.TabIndex = 32;
+            this.txt_bx_6.Visible = false;
             // 
             // txt_bx_7
             // 
@@ -483,6 +489,7 @@
             this.txt_bx_7.Name = "txt_bx_7";
             this.txt_bx_7.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_7.TabIndex = 33;
+            this.txt_bx_7.Visible = false;
             // 
             // txt_bx_8
             // 
@@ -490,6 +497,7 @@
             this.txt_bx_8.Name = "txt_bx_8";
             this.txt_bx_8.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_8.TabIndex = 34;
+            this.txt_bx_8.Visible = false;
             // 
             // txt_bx_9
             // 
@@ -497,6 +505,7 @@
             this.txt_bx_9.Name = "txt_bx_9";
             this.txt_bx_9.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_9.TabIndex = 35;
+            this.txt_bx_9.Visible = false;
             // 
             // txt_bx_10
             // 
@@ -504,6 +513,7 @@
             this.txt_bx_10.Name = "txt_bx_10";
             this.txt_bx_10.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_10.TabIndex = 36;
+            this.txt_bx_10.Visible = false;
             // 
             // Form1
             // 
