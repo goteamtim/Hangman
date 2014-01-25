@@ -44,6 +44,7 @@ namespace Hangman
 
         public void chosenLetter(char choice, string word)//letter gets passed and compared to the winning word if its in the word it gets added to the word
         {
+            
             TextBox[] letters = new TextBox[10] { txt_bx_1, txt_bx_2, txt_bx_3, txt_bx_4, txt_bx_5, txt_bx_6, txt_bx_7, txt_bx_8, txt_bx_9, txt_bx_10 };
             for (int i = 0; i < word.Length; i++) 
             {
@@ -51,14 +52,39 @@ namespace Hangman
                 {
                     letters[i].Text = choice.ToString();
                 }
+                else
+                {
+                    bodyBuilder();
+                }
             }
+            
+        }
+
+        public void bodyBuilder()
+        {
+            int a = 9;
+            while (10>a)
+            {
+                if (head.Visible != true)
+                {
+                    head.Visible = true;
+                    a = 11;
+                }
+                else if (body.Visible == false)
+                {
+                    body.Visible = true;
+                    a = 11;
+                } 
+            }
+
+
         }
 
         private void btn_A_Click(object sender, EventArgs e)
         {
             btn_A.Enabled = false;
             chosenLetter('a',winningWord);
-            
+            //bodyBuilder();
             
         }
 
