@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.head = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.body = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.left_leg = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.right_leg = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.right_Arm = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.left_Arm = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.right_Arm = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.right_leg = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.left_leg = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.body = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.head = new Microsoft.VisualBasic.PowerPacks.OvalShape();
+            this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.btn_A = new System.Windows.Forms.Button();
             this.btn_B = new System.Windows.Forms.Button();
             this.btn_D = new System.Windows.Forms.Button();
@@ -97,67 +97,13 @@
             this.shapeContainer1.TabIndex = 0;
             this.shapeContainer1.TabStop = false;
             // 
-            // lineShape1
+            // left_Arm
             // 
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 59;
-            this.lineShape1.X2 = 59;
-            this.lineShape1.Y1 = 48;
-            this.lineShape1.Y2 = 243;
-            // 
-            // lineShape2
-            // 
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 21;
-            this.lineShape2.X2 = 96;
-            this.lineShape2.Y1 = 244;
-            this.lineShape2.Y2 = 244;
-            // 
-            // lineShape3
-            // 
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 59;
-            this.lineShape3.X2 = 151;
-            this.lineShape3.Y1 = 48;
-            this.lineShape3.Y2 = 48;
-            // 
-            // lineShape4
-            // 
-            this.lineShape4.Name = "lineShape4";
-            this.lineShape4.X1 = 151;
-            this.lineShape4.X2 = 151;
-            this.lineShape4.Y1 = 48;
-            this.lineShape4.Y2 = 58;
-            // 
-            // head
-            // 
-            this.head.Location = new System.Drawing.Point(134, 58);
-            this.head.Name = "head";
-            this.head.Size = new System.Drawing.Size(34, 31);
-            // 
-            // body
-            // 
-            this.body.Name = "body";
-            this.body.X1 = 151;
-            this.body.X2 = 151;
-            this.body.Y1 = 90;
-            this.body.Y2 = 168;
-            // 
-            // left_leg
-            // 
-            this.left_leg.Name = "left_leg";
-            this.left_leg.X1 = 151;
-            this.left_leg.X2 = 124;
-            this.left_leg.Y1 = 167;
-            this.left_leg.Y2 = 197;
-            // 
-            // right_leg
-            // 
-            this.right_leg.Name = "right_leg";
-            this.right_leg.X1 = 151;
-            this.right_leg.X2 = 175;
-            this.right_leg.Y1 = 167;
-            this.right_leg.Y2 = 197;
+            this.left_Arm.Name = "left_Arm";
+            this.left_Arm.X1 = 151;
+            this.left_Arm.X2 = 130;
+            this.left_Arm.Y1 = 99;
+            this.left_Arm.Y2 = 124;
             // 
             // right_Arm
             // 
@@ -167,13 +113,67 @@
             this.right_Arm.Y1 = 99;
             this.right_Arm.Y2 = 124;
             // 
-            // left_Arm
+            // right_leg
             // 
-            this.left_Arm.Name = "left_Arm";
-            this.left_Arm.X1 = 151;
-            this.left_Arm.X2 = 130;
-            this.left_Arm.Y1 = 99;
-            this.left_Arm.Y2 = 124;
+            this.right_leg.Name = "right_leg";
+            this.right_leg.X1 = 151;
+            this.right_leg.X2 = 175;
+            this.right_leg.Y1 = 167;
+            this.right_leg.Y2 = 197;
+            // 
+            // left_leg
+            // 
+            this.left_leg.Name = "left_leg";
+            this.left_leg.X1 = 151;
+            this.left_leg.X2 = 124;
+            this.left_leg.Y1 = 167;
+            this.left_leg.Y2 = 197;
+            // 
+            // body
+            // 
+            this.body.Name = "body";
+            this.body.X1 = 151;
+            this.body.X2 = 151;
+            this.body.Y1 = 90;
+            this.body.Y2 = 168;
+            // 
+            // head
+            // 
+            this.head.Location = new System.Drawing.Point(134, 58);
+            this.head.Name = "head";
+            this.head.Size = new System.Drawing.Size(34, 31);
+            // 
+            // lineShape4
+            // 
+            this.lineShape4.Name = "lineShape4";
+            this.lineShape4.X1 = 151;
+            this.lineShape4.X2 = 151;
+            this.lineShape4.Y1 = 48;
+            this.lineShape4.Y2 = 58;
+            // 
+            // lineShape3
+            // 
+            this.lineShape3.Name = "lineShape3";
+            this.lineShape3.X1 = 59;
+            this.lineShape3.X2 = 151;
+            this.lineShape3.Y1 = 48;
+            this.lineShape3.Y2 = 48;
+            // 
+            // lineShape2
+            // 
+            this.lineShape2.Name = "lineShape2";
+            this.lineShape2.X1 = 21;
+            this.lineShape2.X2 = 96;
+            this.lineShape2.Y1 = 244;
+            this.lineShape2.Y2 = 244;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 59;
+            this.lineShape1.X2 = 59;
+            this.lineShape1.Y1 = 48;
+            this.lineShape1.Y2 = 243;
             // 
             // btn_A
             // 
@@ -437,82 +437,112 @@
             // 
             // txt_bx_1
             // 
+            this.txt_bx_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_bx_1.Location = new System.Drawing.Point(21, 301);
             this.txt_bx_1.Name = "txt_bx_1";
+            this.txt_bx_1.ReadOnly = true;
             this.txt_bx_1.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_1.TabIndex = 27;
+            this.txt_bx_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_bx_1.Visible = false;
             // 
             // txt_bx_2
             // 
+            this.txt_bx_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_bx_2.Location = new System.Drawing.Point(56, 301);
             this.txt_bx_2.Name = "txt_bx_2";
+            this.txt_bx_2.ReadOnly = true;
             this.txt_bx_2.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_2.TabIndex = 28;
+            this.txt_bx_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_bx_2.Visible = false;
             // 
             // txt_bx_3
             // 
+            this.txt_bx_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_bx_3.Location = new System.Drawing.Point(91, 301);
             this.txt_bx_3.Name = "txt_bx_3";
+            this.txt_bx_3.ReadOnly = true;
             this.txt_bx_3.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_3.TabIndex = 29;
+            this.txt_bx_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_bx_3.Visible = false;
             // 
             // txt_bx_4
             // 
+            this.txt_bx_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_bx_4.Location = new System.Drawing.Point(126, 301);
             this.txt_bx_4.Name = "txt_bx_4";
+            this.txt_bx_4.ReadOnly = true;
             this.txt_bx_4.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_4.TabIndex = 30;
+            this.txt_bx_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_bx_4.Visible = false;
             // 
             // txt_bx_5
             // 
+            this.txt_bx_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_bx_5.Location = new System.Drawing.Point(161, 301);
             this.txt_bx_5.Name = "txt_bx_5";
+            this.txt_bx_5.ReadOnly = true;
             this.txt_bx_5.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_5.TabIndex = 31;
+            this.txt_bx_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_bx_5.Visible = false;
             // 
             // txt_bx_6
             // 
+            this.txt_bx_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_bx_6.Location = new System.Drawing.Point(196, 301);
             this.txt_bx_6.Name = "txt_bx_6";
+            this.txt_bx_6.ReadOnly = true;
             this.txt_bx_6.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_6.TabIndex = 32;
+            this.txt_bx_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_bx_6.Visible = false;
             // 
             // txt_bx_7
             // 
+            this.txt_bx_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_bx_7.Location = new System.Drawing.Point(231, 301);
             this.txt_bx_7.Name = "txt_bx_7";
+            this.txt_bx_7.ReadOnly = true;
             this.txt_bx_7.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_7.TabIndex = 33;
+            this.txt_bx_7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_bx_7.Visible = false;
             // 
             // txt_bx_8
             // 
+            this.txt_bx_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_bx_8.Location = new System.Drawing.Point(266, 301);
             this.txt_bx_8.Name = "txt_bx_8";
+            this.txt_bx_8.ReadOnly = true;
             this.txt_bx_8.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_8.TabIndex = 34;
+            this.txt_bx_8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_bx_8.Visible = false;
             // 
             // txt_bx_9
             // 
+            this.txt_bx_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_bx_9.Location = new System.Drawing.Point(301, 301);
             this.txt_bx_9.Name = "txt_bx_9";
+            this.txt_bx_9.ReadOnly = true;
             this.txt_bx_9.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_9.TabIndex = 35;
+            this.txt_bx_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_bx_9.Visible = false;
             // 
             // txt_bx_10
             // 
+            this.txt_bx_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_bx_10.Location = new System.Drawing.Point(336, 301);
             this.txt_bx_10.Name = "txt_bx_10";
+            this.txt_bx_10.ReadOnly = true;
             this.txt_bx_10.Size = new System.Drawing.Size(29, 22);
             this.txt_bx_10.TabIndex = 36;
+            this.txt_bx_10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_bx_10.Visible = false;
             // 
             // Form1
