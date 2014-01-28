@@ -21,8 +21,8 @@ namespace Hangman
 
     public partial class Form1 : Form
     {
-        static Random choice = new Random();
-        public static string[] wordBank = { "packmule", "pie", "marathon", "internet", "pumpkin", "christmas", "bicycle", "teacher" };
+        static Random choice = new Random();//new instance of the random class
+        public static string[] wordBank = { "packmule", "pie", "marathon", "internet", "pumpkin", "christmas", "bicycle", "teacher" };//wordbank
         public string winningWord = wordBank[choice.Next(0, wordBank.Length)];//Pick a random word from the word bank
         
         public Form1()
@@ -35,24 +35,26 @@ namespace Hangman
             right_leg.Visible = false;
             body.Visible = false;
             head.Visible = false;
-            TextBox[] letters = new TextBox[10] { txt_bx_1, txt_bx_2, txt_bx_3, txt_bx_4, txt_bx_5, txt_bx_6, txt_bx_7, txt_bx_8, txt_bx_9, txt_bx_10 };
-            for (int i = 0; i < winningWord.Length;i++ )//Only show the letters for the selected word
+            TextBox[] letters = new TextBox[10] { txt_bx_1, txt_bx_2, txt_bx_3, txt_bx_4, txt_bx_5, txt_bx_6, txt_bx_7, txt_bx_8, txt_bx_9, txt_bx_10 };//array of all the text boxes in the game.  Right now there are only 10 text boxes which means only 10 letters can be in a word
+            for (int i = 0; i < winningWord.Length;i++ )//loop through the selected word and show a text box for each letter in the word
             {
                 letters[i].Visible = true;
             }
         }
 
-        public void chosenLetter(char choice, string word)//letter gets passed and compared to the winning word if its in the word it gets added to the word
+        public void chosenLetter(char choice, string word)//letter gets passed and compared to the winning word if its in the word it gets added in the text box
         {
             
-            TextBox[] letters = new TextBox[10] { txt_bx_1, txt_bx_2, txt_bx_3, txt_bx_4, txt_bx_5, txt_bx_6, txt_bx_7, txt_bx_8, txt_bx_9, txt_bx_10 };
+            TextBox[] letters = new TextBox[10] { txt_bx_1, txt_bx_2, txt_bx_3, txt_bx_4, txt_bx_5, txt_bx_6, txt_bx_7, txt_bx_8, txt_bx_9, txt_bx_10 };//all the text boxes
             for (int i = 0; i < word.Length; i++) 
             {
-                if (choice == word[i])
+                if (choice == word[i])//If the passed letter is in the word then execute
                 {
                     letters[i].Text = choice.ToString();
+                    break;//I am not sure why I need two breaks here.  Is it one to get out of the if/else and one for the for?
+                    break;//Either way it seems to be working.  Maybe it works with one?
                 }
-                else
+                else//The idea here is if the letter is not in the word then execute adding the next body part to the hanging man
                 {
                     bodyBuilder();
                 }
@@ -60,21 +62,24 @@ namespace Hangman
             
         }
 
-        public void bodyBuilder()
+        public void bodyBuilder()//function to add the next available body part to the hanging man
         {
-            int a = 9;
-            while (10>a)
+            //int a = 9;//working on the right loop/logic to check if the body part is already being shown
+            for (int i = 0; i < 7; i++)
             {
                 if (head.Visible != true)
                 {
                     head.Visible = true;
-                    a = 11;
+                    //a = 11;
+                    break;
+                    //break;
                 }
                 else if (body.Visible == false)
                 {
                     body.Visible = true;
-                    a = 11;
-                } 
+                    //a = 11;
+                    break;
+                }
             }
 
 
