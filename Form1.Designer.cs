@@ -76,6 +76,7 @@
             this.txt_bx_9 = new System.Windows.Forms.TextBox();
             this.txt_bx_10 = new System.Windows.Forms.TextBox();
             this.btn_reset = new System.Windows.Forms.Button();
+            this.btn_Exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // shapeContainer1
@@ -550,11 +551,21 @@
             // 
             this.btn_reset.Location = new System.Drawing.Point(336, 187);
             this.btn_reset.Name = "btn_reset";
-            this.btn_reset.Size = new System.Drawing.Size(134, 23);
+            this.btn_reset.Size = new System.Drawing.Size(64, 23);
             this.btn_reset.TabIndex = 37;
             this.btn_reset.Text = "Reset";
             this.btn_reset.UseVisualStyleBackColor = true;
             this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.Location = new System.Drawing.Point(406, 187);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(64, 23);
+            this.btn_Exit.TabIndex = 38;
+            this.btn_Exit.Text = "Exit";
+            this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // Form1
             // 
@@ -562,6 +573,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(508, 369);
+            this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.txt_bx_10);
             this.Controls.Add(this.txt_bx_9);
@@ -657,6 +669,7 @@
         private System.Windows.Forms.TextBox txt_bx_9;
         private System.Windows.Forms.TextBox txt_bx_10;
         private System.Windows.Forms.Button btn_reset;
+        private System.Windows.Forms.Button btn_Exit;
     }
 }
 

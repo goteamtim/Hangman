@@ -99,7 +99,15 @@ namespace Hangman
                     break;
                 case 6:
                     right_leg.Visible = true;
-                    //Need to add message box here and end the game
+                    DialogResult failed = MessageBox.Show("Would you like to play again?", "Game Over", MessageBoxButtons.YesNo);
+                    if (failed == DialogResult.Yes)
+                    {
+                        resetGame();
+                    }
+                    else
+                    {
+                        this.Close();
+                    }
                     break;
                 default:
 
@@ -268,6 +276,11 @@ namespace Hangman
 
         private void btn_reset_Click(object sender, EventArgs e)
         {
+            resetGame();
+        }
+
+        public void resetGame() 
+        {
             Random choice = new Random();//new instance of the random class
             winningWord = wordBank[choice.Next(0, wordBank.Length)];//Pick a random word from the word bank
             left_Arm.Visible = false;
@@ -295,6 +308,11 @@ namespace Hangman
                     s.Enabled = true;
                 }
             }
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
