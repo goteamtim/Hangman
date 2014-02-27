@@ -5,4 +5,6 @@ Hangman game written in C#.  You can click on a letter as your guess and play th
 
 To Do
 =========
-Add the ability to use your own words based on uploading a csv file
+Use your own words based on uploading a csv file.
+Call external source for words e.x. Dictionary.com
+	Define word after the game ends.
