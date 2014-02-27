@@ -75,6 +75,7 @@
             this.txt_bx_8 = new System.Windows.Forms.TextBox();
             this.txt_bx_9 = new System.Windows.Forms.TextBox();
             this.txt_bx_10 = new System.Windows.Forms.TextBox();
+            this.btn_reset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // shapeContainer1
@@ -545,11 +546,23 @@
             this.txt_bx_10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_bx_10.Visible = false;
             // 
+            // btn_reset
+            // 
+            this.btn_reset.Location = new System.Drawing.Point(336, 187);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(134, 23);
+            this.btn_reset.TabIndex = 37;
+            this.btn_reset.Text = "Reset";
+            this.btn_reset.UseVisualStyleBackColor = true;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(508, 369);
+            this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.txt_bx_10);
             this.Controls.Add(this.txt_bx_9);
             this.Controls.Add(this.txt_bx_8);
@@ -643,6 +656,7 @@
         private System.Windows.Forms.TextBox txt_bx_8;
         private System.Windows.Forms.TextBox txt_bx_9;
         private System.Windows.Forms.TextBox txt_bx_10;
+        private System.Windows.Forms.Button btn_reset;
     }
 }
 
