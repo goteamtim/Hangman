@@ -47,6 +47,7 @@ namespace Hangman
 
         public void chosenLetter(char choice, string word)//letter gets passed and compared to the winning word if its in the word it gets added in the text box
         {
+            bool isEmpty = true;
             bool inWord = false;
             TextBox[] letters = new TextBox[10] { txt_bx_1, txt_bx_2, txt_bx_3, txt_bx_4, txt_bx_5, txt_bx_6, txt_bx_7, txt_bx_8, txt_bx_9, txt_bx_10 };//all the text boxes
             for (int i = 0; i < word.Length; i++) 
@@ -65,6 +66,17 @@ namespace Hangman
                     if (choice == word[i])
                     {
                         letters[i].Text = choice.ToString();
+                        for (int i = 0; i < word.Length; i++)
+                        {
+                            if (letters[i].Text == "")
+                            {
+                                isEmpty = false;
+                            }
+                        }
+                        if (isEmpty)
+                        {
+                            //Run winning function here
+                        }
                     }
                     
                 }
