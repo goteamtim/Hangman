@@ -15,6 +15,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic.FileIO;
 
 namespace Hangman
 {
@@ -23,8 +24,9 @@ namespace Hangman
     {
         public int counter = 0;
         static Random choice = new Random();//new instance of the random class
-        public static string[] wordBank = { "packmule", "pie", "marathon", "internet", "pumpkin", "christmas", "bicycle", "teacher" };//wordbank
-        public string winningWord = wordBank[choice.Next(0, wordBank.Length)];//Pick a random word from the word bank
+        //public static string[] wordBank = { "packmule", "pie", "marathon", "internet", "pumpkin", "christmas", "bicycle", "teacher" };//wordbank
+        //public static string[] wordBank = { };
+        //public string winningWord = wordBank[choice.Next(0, wordBank.Length)];//Pick a random word from the word bank
         
         public Form1()
         {
@@ -45,7 +47,24 @@ namespace Hangman
             DialogResult csvUpload = MessageBox.Show("Would you like to upload your own word bank?", "Wordbank upload", MessageBoxButtons.YesNo);
             if (csvUpload == DialogResult.Yes)
             {
- 
+                using (TextFieldParser parser = new TextFieldParser("T:\\CPP Programs\\projects\\Hangman\\Hangman\\words.csv"))
+                {
+                    parser.Delimiters = new string[] { "," };
+                    while (true)
+                    {
+                        wordBank = parser.ReadFields();
+                        if (wordBank == null)
+                        {
+                            break;
+                        }
+                    }
+                }
+            }
+            else 
+            {
+                string[] wordBank = { "packmule", "pie", "marathon", "internet", "pumpkin", "christmas", "bicycle", "teacher" };//wordbank
+        //public static string[] wordBank = { };
+        string winningWord = wordBank[choice.Next(0, wordBank.Length)];//Pick a random word from the word bank
             }
         }
 
