@@ -117,6 +117,7 @@ namespace Hangman
                     break;
                 case 6:
                     right_leg.Visible = true;
+                    //Add the entire word here so the player knows what word it was
                     DialogResult failed = MessageBox.Show("Would you like to play again?", "Game Over", MessageBoxButtons.YesNo);
                     if (failed == DialogResult.Yes)
                     {
