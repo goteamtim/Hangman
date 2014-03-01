@@ -63,7 +63,6 @@ namespace Hangman
             else 
             {
                 string[] wordBank = { "packmule", "pie", "marathon", "internet", "pumpkin", "christmas", "bicycle", "teacher" };//wordbank
-        //public static string[] wordBank = { };
         string winningWord = wordBank[choice.Next(0, wordBank.Length)];//Pick a random word from the word bank
             }
         }
