@@ -42,7 +42,11 @@ namespace Hangman
                 letters[i].Visible = true;
                 letters[i].Enabled = false;
             }
-            //int counter = 0;
+            DialogResult csvUpload = MessageBox.Show("Would you like to upload your own word bank?", "Wordbank upload", MessageBoxButtons.YesNo);
+            if (csvUpload == DialogResult.Yes)
+            {
+ 
+            }
         }
 
         public void chosenLetter(char choice, string word)//letter gets passed and compared to the winning word if its in the word it gets added in the text box
