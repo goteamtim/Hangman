@@ -66,16 +66,22 @@ namespace Hangman
                     if (choice == word[i])
                     {
                         letters[i].Text = choice.ToString();
-                        for (int i = 0; i < word.Length; i++)
+                        for (int j = 0; j < word.Length; j++)
                         {
-                            if (letters[i].Text == "")
+                            if (letters[j].Text == "")
                             {
                                 isEmpty = false;
                             }
                         }
                         if (isEmpty)
                         {
-                            //Run winning function here
+                            DialogResult win = MessageBox.Show("Congratulations, you won! \n Would you like to play again?", "Winner", MessageBoxButtons.YesNo);
+                                if(win == DialogResult.Yes)
+                                {
+                                    resetGame();
+                                }else{
+                                    this.Close();
+                                }
                         }
                     }
                     
